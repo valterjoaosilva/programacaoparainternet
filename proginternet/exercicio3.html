@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script>
+        function cliqueBotao() {
+            alert('Botão clicado!');
+            prompt('Digite seu nome');
+            confirm('Você tem mais de 18 anos?');
+        }
+
+        function quadrado(v) {
+            alert(v);
+            return (v * v);
+
+        }
+
+        function calcular() {
+            alert(quadrado(16));
+        }
+
+        function informacoesPessoais(nome, idade) {
+            alert('Nome' + nome);
+            alert('idade' + idade);
+        }
+
+        function paginaCarregada() {
+            alert('Bem vindo');
+        }
+
+        function teste() {
+            var v1 = 32;
+            var v2 = 16;
+            v2 = v1 + v2;
+            alert(v2);
+            v3 = v2 * v2;
+            alert(v3);
+            v4 = v3 * 2;
+            alert(v4);
+            v5 = "O valor de v4 é: ";
+            alert(v5 + v4);
+
+        }
+
+        function previsaoTempo() {
+            var temperatura = prompt('Qual é temperatura?:');
+            var velocidadeVento = prompt('Qual velocidade do vento');
+            var t = parseFloat(temperatura);
+            var v = parseFloat(velocidadeVento);
+            var sensTerm = 33 + (10 * Math.sqrt(v) + 10.45 - v) * ((t - 33) / 22);
+            alert("A temperatura é: " + t + "\nA velocidade do vento é :" + v + "\nA sensação térmica é: " + sensTerm);
+
+        }
+    </script>
+
+</head>
+
+<meta charset="utf-8">
+
+
+
+
+<body onload="paginaCarregada()">
+    <input type="button" onclick="cliqueBotao()"><br>
+    <input type="button" onclick="informacoesPessoais('Valter', 50)"><br>
+    <input type="button" onclick="quadrado(4)"><br>
+    <input type="button" onclick="calcular()"><br>
+    <input type="button" onclick="teste()"><br>
+    <input type="button" value="Temperatura" onclick="previsaoTempo()"><br>
+    <input type="button" value="Velocidade do Vento" onclick="previsaoTempo()"><br>
+
+
+</body>
+
+
+</html>
